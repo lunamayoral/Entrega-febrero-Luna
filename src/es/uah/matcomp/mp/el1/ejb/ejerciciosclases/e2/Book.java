@@ -2,6 +2,8 @@ package es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e2;
 
 import es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e1.Author;
 
+import java.util.Arrays;
+
 public class Book {
     private String name;
     private es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e1.Author[] authors;
@@ -47,20 +49,13 @@ public class Book {
     }
 
     public String toString() {
-        return Book
-    }
-    public String getAuthorsName() {
-        return authors.toString();
+        return "Book[name=" + name + ", authors={" + Arrays.toString(authors) + "}, " +
+                "price=" + price + ", qty=" + qty + "]";
     }
 
-    public String getAuthorsEmail() {
-        return authors[0].getEmail();
+    public String getAuthorNames() {
+        return authors[0].getName();
     }
-
-    public char getAuthorsGender() {
-        return authors[0].getGender();
-    }
-
 }
 
 

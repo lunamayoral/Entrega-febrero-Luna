@@ -1,23 +1,30 @@
-package es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e1;
+package es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e3;
 
 public class Book {
+    private String isbn;
     private String name;
     private Author author;
     private double price;
     private int qty;
 
-    //Constructores
-    public Book(String name, Author author, double price) {
+    public Book(String isbn, String name, Author author, double price) {
+        this.isbn = isbn;
         this.name = name;
         this.author = author;
         this.price = price;
         this.qty = 0;
     }
-    public Book(String name, Author author, double price, int qty) {
+
+    public Book(String isbn, String name, Author author, double price, int qty) {
+        this.isbn = isbn;
         this.name = name;
         this.author = author;
         this.price = price;
         this.qty = qty;
+    }
+
+    public String getIsbn() {
+        return isbn;
     }
 
     public String getName() {
@@ -44,19 +51,11 @@ public class Book {
         this.qty = qty;
     }
 
-    public String toString() {
-        return "Book [name=" + name + ",Author[" + author.toString() + "], price=" + price + ", qty=" + qty + "]";
-    }
-
     public String getAuthorName() {
         return author.getName();
     }
 
-    public String getAuthorEmail() {
-        return author.getEmail();
-    }
-
-    public char getAuthorGender() {
-        return author.getGender();
+    public String toString() {
+        return "Book [isbn=" + isbn + ", name=" + name + ",Author[" + author.toString() + "],price=" + price + ", qty=" + qty + "]";
     }
 }
