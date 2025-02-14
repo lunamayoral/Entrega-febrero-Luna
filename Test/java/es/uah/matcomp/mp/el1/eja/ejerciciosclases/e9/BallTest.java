@@ -96,7 +96,7 @@ class BallTest {
     @Test
     void testToString() {
         Ball ball = new Ball(3.0f,2.0f,5,4.0f,6.0f);
-        String expectedString = "Ball[(3,0,2,0),speed=(4,0,6,0)]";
+        String expectedString = "Ball [(3.0,2.0), speed=(4.0,6.0)]";
         assertEquals(expectedString, ball.toString());
     }
 }

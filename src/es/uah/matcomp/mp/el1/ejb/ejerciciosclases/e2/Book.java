@@ -1,23 +1,21 @@
 package es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e2;
 
-import es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e1.Author;
-
 import java.util.Arrays;
 
 public class Book {
     private String name;
-    private es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e1.Author[] authors;
+    private Author[] authors;
     private double price;
     private int qty;
 
     //Constructores
-    public Book(String name, es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e1.Author[] authors, double price) {
+    public Book(String name, Author[] authors, double price) {
         this.name = name;
         this.authors = authors;
         this.price = price;
         this.qty = 0;
     }
-    public Book(String name, es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e1.Author[] authors, double price, int qty) {
+    public Book(String name, Author[] authors, double price, int qty) {
         this.name = name;
         this.authors = authors;
         this.price = price;

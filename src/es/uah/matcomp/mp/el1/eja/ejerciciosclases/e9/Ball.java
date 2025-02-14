@@ -70,7 +70,7 @@ public class Ball {
     }
 
     public String toString() {
-        return String.format("Ball[(%.1f,%.1f),speed=(%.1f,%.1f)]", x, y, xDelta, yDelta);
+        return "Ball [(" + x + "," + y + "), speed=(" + xDelta + "," + yDelta + ")]";
     }
 }
 
