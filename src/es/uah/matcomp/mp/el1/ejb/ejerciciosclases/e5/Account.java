@@ -1,5 +1,7 @@
 package es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e5;
 
+import java.util.Locale;
+
 public class Account {
     private int id;
     private Customer customer;
@@ -34,7 +36,7 @@ public class Account {
     }
 
     public String toString() {
-        return customer.toString() + " balance=$" + String.format("%.2f", balance);
+        return customer.toString() + " balance=$" + String.format(Locale.US, "%.2f", balance);
     }
 
     public String getCustomerName() {

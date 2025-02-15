@@ -1,7 +1,5 @@
 package es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e8;
 
-import es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e7.MyPoint;
-
 public class TestMyCircle {
     public static void main(String[] args) {
         MyCircle myCircle1 = new MyCircle(new MyPoint(1,1),5);

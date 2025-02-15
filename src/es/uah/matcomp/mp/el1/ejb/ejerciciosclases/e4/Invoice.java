@@ -49,7 +49,7 @@ public class Invoice {
     }
 
     public String toString() {
-        return "Invoice [id=" + id + ", customer=" + customer + ", amount=" + amount + "]";
+        return "Invoice [id=" + id + ", customer=" + customer.toString() + ", amount=" + amount + "]";
     }
 
 }

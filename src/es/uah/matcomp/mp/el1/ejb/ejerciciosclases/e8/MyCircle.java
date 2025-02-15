@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e8;
 
-import es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e7.MyPoint;
 
 public class MyCircle {
     private MyPoint center;

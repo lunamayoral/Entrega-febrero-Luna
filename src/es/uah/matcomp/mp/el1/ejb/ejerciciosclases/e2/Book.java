@@ -52,7 +52,14 @@ public class Book {
     }
 
     public String getAuthorNames() {
-        return authors[0].getName();
+        String names = "";
+        for (int i = 0; i < authors.length; i++) {
+            names += authors[i].getName();
+            if (i < authors.length - 1){
+                names += ", ";
+            }
+        }
+        return names;
     }
 }
 
