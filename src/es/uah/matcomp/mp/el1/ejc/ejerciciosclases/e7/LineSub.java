@@ -20,11 +20,11 @@ public class LineSub extends Point {
     // Inherits methods getX() and getY() from superclass Point
     @Override
     public String toString() {
-        return "Line sub from: " + super.toString() + " to " + end.toString();
+        return "Line subclass of: " + super.toString() + " to " + end.toString();
     }
 
     public Point getBegin() {
-        return this;
+        return new Point(getX(), getY());
     }
     public Point getEnd() {
         return end;
@@ -50,11 +50,11 @@ public class LineSub extends Point {
         return end.getY();
     }
 
-    public void setBeginX(Point begin) {
-        super.setX(begin.getX());
+    public void setBeginX(int beginX) {
+        super.setX(beginX);
     }
-    public void setBeginY(Point begin) {
-        super.setY(begin.getY());
+    public void setBeginY(int beginY) {
+        super.setY(beginY);
     }
 
     public void setBeginXY(int beginX, int beginY) {
@@ -65,7 +65,7 @@ public class LineSub extends Point {
         this.end.setX(endX);
     }
     public void setEndY(int endY) {
-        this.end.setY(end.getY());
+        this.end.setY(endY);
     }
     public void setEndXY(int endX, int endY) {
         setEndX(endX);
@@ -77,6 +77,7 @@ public class LineSub extends Point {
         int deltaY = getEndY() - getBeginY();
         return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
     }  // Length of the line
+
     public double getGradient() {
         int deltaX = getEndX() - getBeginX();
         int deltaY = getEndY() - getBeginY();

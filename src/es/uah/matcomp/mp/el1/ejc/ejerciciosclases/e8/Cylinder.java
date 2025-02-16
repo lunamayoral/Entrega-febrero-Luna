@@ -36,7 +36,7 @@ public class Cylinder {
     }
 
     public String toString() {
-        return "Cylinder: " + base.getRadius() + ", Height: " + height;
+        return "Cylinder: " + base.toString() + ", Height: " + height;
     }
 
 }

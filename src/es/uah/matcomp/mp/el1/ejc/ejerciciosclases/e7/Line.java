@@ -18,7 +18,7 @@ public class Line {
 
     // Public methods
     public String toString() {
-        return begin.toString() + " " + end.toString();
+        return "Line: " + begin.toString() + " " + end.toString();
     }
 
     public Point getBegin() {
@@ -47,23 +47,22 @@ public class Line {
         return end.getY();
     }
 
-    public void setBeginX(Point begin) {
-        begin.setX(begin.getX());
+    public void setBeginX(int beginX) {
+        this.begin.setX(beginX);
     }
-    public void setBeginY(Point begin) {
-        begin.setY(begin.getY());
+    public void setBeginY(int beginY) {
+        this.begin.setY(beginY);
     }
     public void setBeginXY(int beginX, int beginY) {
         this.begin = new Point(beginX, beginY);
     }
-    public void setEndX(Point end) {
-        end.setX(end.getX());
+    public void setEndX(int endX) {
+        this.end.setX(endX);
     }
-    public void setEndY(Point end) {
-        end.setY(end.getY());
+    public void setEndY(int endY) {
+        this.end.setY(endY);
     }
-    public void setEndXY(int beginX, int beginY, int endX, int endY) {
-        this.begin = new Point(beginX, beginY);
+    public void setEndXY(int endX, int endY) {
         this.end = new Point(endX, endY);
     }
 
