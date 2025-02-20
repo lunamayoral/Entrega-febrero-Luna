@@ -1,23 +1,24 @@
-package es.uah.matcomp.mp.el1.ejd.ejerciciosclases.e2;
+package es.uah.matcomp.mp.el1.ejd.ejerciciosclases.e5;
 
 public class Circle implements GeometricObject {
-    private double radius;
+    protected double radius;
 
-    //Constructors
+    //Constructor
     public Circle(double radius) {
         this.radius = radius;
     }
 
     public String toString() {
-        return "Circle [radius = " + radius + "]";
+        return "Circle[radius= " + radius + "]";
     }
 
     @Override
-    public double getArea(){
+    public double getArea() {
         return Math.PI * radius * radius;
     }
+
     @Override
-    public double getPerimeter(){
+    public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 }
