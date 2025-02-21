@@ -1,5 +1,7 @@
 package es.uah.matcomp.mp.el1.ejb.ejerciciosclases.e6;
 
+import java.util.Locale;
+
 public class TestMatrizDistancia {
     public static void main(String[] args) {
         // Creamos un array de 10 puntos
@@ -15,7 +17,7 @@ public class TestMatrizDistancia {
         for (int n = 0; n < points.length; n++) {
             for (int m = 0; m < points.length; m++) {
                 double distance = points[n].distance(points[m]);
-                System.out.printf("%.2f ", distance);
+                System.out.printf(Locale.US, "%.2f ", distance);
             }
             System.out.println();
         }
